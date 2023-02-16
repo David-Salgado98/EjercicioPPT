@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ejercicio1 {
     public static void main(String[] args) {
 
-
+            //Agregar el system.in
             Scanner s = new Scanner(System.in);
 
     System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
@@ -11,7 +11,9 @@ public class Ejercicio1 {
 
     System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
             Scanner s2 = new Scanner(System.in);
+            //agregar el s2
             String j2 = s2.nextLine();
+            //agregar boolean
     boolean evaluar = true;
     if (j1.equals(j2)) {
                 System.out.println("Empate");
@@ -23,6 +25,7 @@ public class Ejercicio1 {
                     g = 1;
                 }
             }
+            //agregar break;
             break;
 
             case "papel": {
@@ -30,6 +33,7 @@ public class Ejercicio1 {
                     g = 1;
 
                 }
+                //agregar break
                 break;
             }
 
@@ -37,15 +41,18 @@ public class Ejercicio1 {
                     if (j2.equals("papel")) {
                         g = 1;
                     }
+                    //agregar break
                     break;
 
                 }
                 default:{
+                    //agregar sout y evaluar para salir en la siguiente impresion
                     System.out.println("Valor invalido");
                     evaluar = false;
 
                 }
             }
+            //agregar clausula
             if(evaluar){
                 System.out.println("Gana el jugador " + g);
             }
